@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FCEEEE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Questions">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            >
+            <TextView
+                android:id="@+id/title_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Questions to find your perfect match"
+                android:textColor="#CF3453"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:fontFamily="@font/jersey_regular"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#CF3453"
+                android:fontFamily="@font/jersey_regular"
+                android:textSize="30sp"
+                android:text="I am attracted to " />
+
+
+            <!-- Button attracted to gender inside a linear layout (container)-->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/women_attraction_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:text="Female"
+                    android:textColor="#CF3453" />
+                <Button
+                    android:id="@+id/men_attraction_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:layout_marginStart="16dp"
+                    android:text="Male" />
+
+                <Button
+                    android:id="@+id/bisexual_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:textColor="#CF3453"
+                    android:layout_marginStart="16dp"
+                    android:text="Both"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="#CF3453"
+                android:fontFamily="@font/jersey_regular"
+                android:textSize="30sp"
+                android:text="MBTI " />
+
+
+            <!-- dropdown menu/spinner for MBTI  -->
+            <Spinner
+                android:id="@+id/mbti_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CF3453"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/jersey_regular"
+                android:textSize="30sp"
+                android:text="Zodiac sign" />
+
+
+
+            <!-- dropdown menu/spinner for zodiac signs  -->
+            <Spinner
+                android:id="@+id/zodiac_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:spinnerMode="dropdown"
+                android:background="@color/white"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CF3453"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/jersey_regular"
+                android:textSize="30sp"
+                android:text="Favorite season " />
+
+
+            <!-- Button for each season -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <!-- first row of buttons seasons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/winter_button"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Winter"
+                        android:layout_marginEnd="40dp"/>
+
+                    <Button
+                        android:id="@+id/spring_button"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:textColor="#CF3453"
+                        android:text="Spring"/>
+                </LinearLayout>
+
+                <!-- second row of buttons seasons-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+
+                    <Button
+                        android:id="@+id/summer_button"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:text="Summer"
+                        android:textColor="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:layout_marginEnd="40dp"/>
+                    <Button
+                        android:id="@+id/autumn_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:textColor="#CF3453"
+                        android:text="Autumn"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#CF3453"
+                android:fontFamily="@font/jersey_regular"
+                android:textSize="30sp"
+                android:text="Pick your favorite animal ! " />
+
+
+            <!-- all button for animals -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <!-- first row of buttons animals-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp">
+                    <Button
+                        android:id="@+id/cat_button"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Cat" />
+
+                    <Button
+                        android:id="@+id/dog_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:textColor="#CF3453"
+                        android:text="Dog"/>
+
+                    <Button
+                        android:id="@+id/horse_button"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:textColor="#CF3453"
+                        android:text="Horse" />
+                </LinearLayout>
+                <!-- button bird -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bird_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:backgroundTint="@color/white"
+                        android:text="Bird"/>
+
+                    <Button
+                        android:id="@+id/own_animal_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:backgroundTint="@color/white"
+                        android:text="I'm my own favorite animal ! "/>
+                </LinearLayout>
+
+                <!-- Handle groupe decision-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/jersey_regular"
+                    android:textSize="30sp"
+                    android:text="How do you handle a group decision ? " />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/handle_decision"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/with_the_flow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I’m good with whatever, go with the flow"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/take_lead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I take the lead and make a clear plan"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/charm_everyone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I charm everyone into agreeing with me"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/energy_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I suggest something exciting and keep the energy up"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/follow_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I follow what others want — I just want everyone happy"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/logical_option"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I weigh pros and cons and suggest the most logical option"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/something_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="I push for trying something new and out of the box"
+                        android:textColor="#620719"/>
+                </RadioGroup>
+
+
+                <!-- Weekend Plan-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/jersey_regular"
+                    android:textSize="30sp"
+                    android:text="What’s your ideal weekend plan?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/week_plan"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/baking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Baking cookies and watching rom-coms"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/organizing_trip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Organizing a group trip with a full itinerary"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/game_night"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Hitting up a party or game night"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/road_trip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Going on a spontaneous road trip"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/reading_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Reading a book or solving puzzles"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/performing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Performing at an open mic or being the center of attention"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/chilling_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Chilling at home with no plans, just vibes"
+                        android:textColor="#620719"/>
+                </RadioGroup>
+
+                <!-- Go-to Drink -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/jersey_regular"
+                    android:textSize="30sp"
+                    android:text="How do you introduce yourself to a new friend group ?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/go_to_drink"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/doubles_epresso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You kinda hide behind you friend"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/plain_black_coffee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You talk firmly and calmly"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/hot_chocolate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You're relaxed and maybe crack a joke or two"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/green_tea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="With confidence and drag all the attention on you"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/caramel_macchiato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You talk about nonsense and some people look at you awkwardly"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/seasonal_special"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You tell the basic stuff about you calmly"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/iced_drink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You’re corpo, you know what to say and how to say it so we take you seriously"
+                        android:textColor="#620719"/>
+                </RadioGroup>
+
+                <!-- Ask Favor -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/jersey_regular"
+                    android:textSize="30sp"
+                    android:text="You need to ask someone for a favor. How do you go about it?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ask_favor"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/puppy_eyes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You use your big puppy eyes and maybe throw in a shy smile"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/win_win_situation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You explain how it’s a win-win situation"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/no_pressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You just casually drop it into conversation, like, Hey, no pressure, but if you're around…"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/charm_your_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You throw compliment hoping to charm your way in"
+                        android:textColor="#620719"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/wild_quest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="You frame the favor like a wild quest: Come on, partner in crime!"
+                        android:textColor="#620719"/>
+                </RadioGroup>
+
+
+                <!-- Characterize your ideal partener -->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="#CF3453"
+                android:fontFamily="@font/jersey_regular"
+                android:textSize="30sp"
+                android:text="How would you characterize your ideal partner"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Button for ideal type -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <!-- first row of buttons type partner-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/cute_type_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#CF3453"
+                        android:text="Cute"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <Button
+                        android:id="@+id/bossy_type_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#CF3453"
+                        android:text="Bossy"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:layout_marginEnd="20dp"/>
+
+
+                </LinearLayout>
+
+                <!-- 2nd row of types  -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/fun_type_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#CF3453"
+                        android:text="Fun"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <Button
+                        android:id="@+id/charismatic_type_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#CF3453"
+                        android:fontFamily="@font/lekton_regular"
+                        android:textSize="17sp"
+                        android:text="Charismatic"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/adventurous_type_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#CF3453"
+                    android:text="Adventurous"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"/>
+
+                <Button
+                    android:id="@+id/chill_type_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:text="Chill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:id="@+id/rational_type_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#CF3453"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="17sp"
+                    android:text="Rational"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+                <Button
+                    android:id="@+id/submit_perso_taste"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:fontFamily="@font/lekton_regular"
+                    android:textSize="20sp"
+                    android:backgroundTint="#CF3453"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>
