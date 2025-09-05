@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Date_Frag">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chateaucampus"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="-303dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:scaleType="fitCenter"
+        android:src="@drawable/basic_skin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:background="#CF3453"
+        android:fontFamily="@font/jersey_regular"
+        android:text="Name"
+        android:textColor="#FCEEEE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FCEEEE"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:id="@+id/dialogue"
+        android:fontFamily="@font/lekton_regular"
+        android:textColor="#CF3453"
+        android:text=" Your date look at you up and down, curious. A small, relaxed smile pulls at their lips as they rest their hand on their chin. Their tone is easy, casual, almost amused."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+
+    <Button
+        android:id="@+id/next_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="25sp"
+        android:fontFamily="@font/jersey_regular"
+        android:textColor="#FF8AA0"
+        android:backgroundTint="#FCEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/next_dialogue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="25sp"
+        android:fontFamily="@font/jersey_regular"
+        android:textColor="#FF8AA0"
+        android:backgroundTint="#FCEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_marginBottom="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice1"
+            android:backgroundTint="#A41933"
+            android:fontFamily="@font/jersey_regular"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Choice2"
+            android:backgroundTint="#A41933"
+            android:fontFamily="@font/jersey_regular"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Choice3"
+            android:backgroundTint="#A41933"
+            android:fontFamily="@font/jersey_regular"
+            android:textSize="30sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A41933"
+            android:fontFamily="@font/jersey_regular"
+            android:text="Choice4"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#A41933"
+            android:fontFamily="@font/jersey_regular"
+            android:text="Choice5"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/choice6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#A41933"
+            android:fontFamily="@font/jersey_regular"
+            android:text="Choice6"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="210dp"
+        android:src="@drawable/aura_5"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="-20dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/aura_barre_image"
+        app:layout_constraintBottom_toTopOf="@+id/aura_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+
+
+
+    <TextView
+        android:id="@+id/aura_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jersey_regular"
+        android:text="AURA : 0"
+        android:textSize="22sp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#CF3453"
+        android:background="#FCEEEE"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+
+        android:id="@+id/button_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="#FFECCC"
+        android:textColor="#CF3453"
+        android:fontFamily="@font/jersey_regular"
+        android:text="End Date"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
