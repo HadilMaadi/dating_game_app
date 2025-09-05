@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF3453"
+    tools:context=".Transition">
+
+    <TextView
+        android:id="@+id/TxtGoToDate1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jersey_regular"
+        android:gravity="center"
+        android:text="YOU ARE GOING ON A DATE WITH YOUR MATCH "
+        android:textColor="#FFFDFD"
+        android:textSize="36sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtGoToDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="23sp"
+        android:fontFamily="@font/jersey_regular"
+        android:gravity="center"
+        android:text="MAKE THE RIGHT CHOICES"
+        android:textColor="#FFFDFD"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtGoToDate1" />
+
+    <Button
+        android:id="@+id/buttonGoDress"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/lekton_bold"
+        android:textStyle="bold"
+        android:text="Let’s dress up for the date"
+        android:textColor="#CF3453"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtGoToDate2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
