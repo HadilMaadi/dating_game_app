@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCEEEE"
+    android:id="@+id/main"
+    tools:context=".Matches">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <!-- Titre principal -->
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONGRATULATIONS YOU HAVE BEEN MATCH WITH"
+                android:fontFamily="@font/jersey_regular"
+                android:textAlignment="center"
+                android:textColor="#CF3453"
+                android:textSize="36sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <!-- Instruction -->
+            <TextView
+                android:id="@+id/text_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CHOOSE YOUR MATCH"
+                android:textColor="#CF3453"
+                android:fontFamily="@font/lekton_regular"
+                android:textSize="20sp"/>
+
+            <!-- Personne 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/pourcentage_person1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_bold"/>
+
+                <ImageButton
+                    android:id="@+id/person1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Choose person 1"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:id="@+id/name_person1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="17sp"
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_bold"/>
+
+                <TextView
+                    android:id="@+id/quote_person1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=" "
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_italic"/>
+            </LinearLayout>
+
+            <!-- Personne 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/pourcentage_person2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_bold"/>
+
+                <ImageButton
+                    android:id="@+id/person2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Choose person 2"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:id="@+id/name_person2"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_bold"/>
+
+                <TextView
+                    android:id="@+id/quote_person2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=" "
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_italic"/>
+            </LinearLayout>
+
+            <!-- Personne 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/pourcentage_person3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_bold"/>
+
+                <ImageButton
+                    android:id="@+id/person3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Choose person 3"
+                    android:scaleType="fitCenter"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name_person3"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_bold"/>
+                <TextView
+                    android:id="@+id/quote_person3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=" "
+                    android:textColor="#CF3453"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lekton_italic"/>
+            </LinearLayout>
+
+            <!-- Bouton Continue -->
+            <Button
+
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/button_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I chose my match"
+                android:fontFamily="@font/lekton_bold"
+                android:textSize="20sp"
+                android:backgroundTint="@color/white"
+                android:textColor="#CF3453"/>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
