@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dress_up_woman">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- margin of the frame -->
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <!-- linear layout of the textview  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/jersey_regular"
+                    android:textColor="#CF3453"
+                    android:textSize="38sp"
+                    android:text="Let's get dressed ! "/>
+            </LinearLayout>
+            <!-- skin color selection-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/body_color_white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/white"/>
+                <ImageButton
+                    android:id="@+id/body_color_lightskin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/lightskin"/>
+                <ImageButton
+                    android:id="@+id/body_color_brown"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/brown"/>
+                <ImageButton
+                    android:id="@+id/body_color_black"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/dark"/>
+            </LinearLayout>
+
+            <!-- Linear layout of the two linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- persona COLOR BODY  -->
+                <FrameLayout
+                    android:layout_width="250dp"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="15dp">
+                    <!-- woman body -->
+                    <ImageView
+                        android:id="@+id/white_woman_body"
+                        android:src="@drawable/white_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/lightskin_woman_body"
+                        android:src="@drawable/lightskin_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/brown_woman_body"
+                        android:src="@drawable/browskin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/dark_woman_body"
+                        android:src="@drawable/dark_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <!-- les outfits des femmes -->
+                    <ImageView
+                        android:id="@+id/cute_outfit_woman_zoom"
+                        android:src="@drawable/cute_woman"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/bossy_outfit_woman_zoom"
+                        android:visibility="invisible"
+                        android:src="@drawable/bossy_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/charismatic_outfit_woman_zoom"
+                        android:src="@drawable/charismatic_woman"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/fun_outfit_woman_zoom"
+                        android:visibility="invisible"
+                        android:src="@drawable/fun_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/chill_outfit_woman_zoom"
+                        android:visibility="invisible"
+                        android:src="@drawable/chill_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/rational_outfit_woman_zoom"
+                        android:visibility="invisible"
+                        android:src="@drawable/rationnal_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/adventurous_outfit_woman_zoom"
+                        android:visibility="invisible"
+                        android:src="@drawable/adventurous_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </FrameLayout>
+
+                <!--  scroll view of the different outfit -->
+                <ScrollView
+                    android:layout_width="100dp"
+                    android:layout_height="400dp"
+                    android:layout_marginTop= "10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/cute_outfit"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/cute_woman"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="centerInside"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="cute_outfit"/>
+
+                        <ImageButton
+                            android:id="@+id/charismatic_outfit"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/charismatic_woman"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="centerInside"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="charismatic_outfit"/>
+                        <ImageButton
+                            android:id="@+id/bossy_outfit"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/bossy_woman"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="centerInside"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="charismatic_outfit"/>
+                        <ImageButton
+                            android:id="@+id/rational_outfit"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/rationnal_woman"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="centerInside"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="charismatic_outfit"/>
+                        <ImageButton
+                            android:id="@+id/fun_outfit"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/fun_woman"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="centerInside"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="charismatic_outfit"/>
+                        <ImageButton
+                            android:id="@+id/adventurous_outfit"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/adventurous_woman"
+                            android:backgroundTint="@color/white"
+                            android:scaleType="centerInside"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="charismatic_outfit"/>
+
+                        <ImageButton
+                            android:id="@+id/chill_outfit"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/chill_woman"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginBottom="20dp"
+                            android:contentDescription="charismatic_outfit"/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+            <!-- button continue linear layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <Button
+                    android:layout_width="250dp"
+                    android:textSize="20sp"
+                    android:id="@+id/continue_button_dress_up"
+                    android:fontFamily="@font/lekton_bold"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CF3453"
+                    android:text="Continue"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
