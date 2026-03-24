@@ -1,7 +1,8 @@
 # dating_game_app
 This is a dating compatability game app where you'll date a classmate from our class ! 
+The app will ask you what type of person are you as well as your personal preference for a partner, the app will automatically choose the most 3 compatible people of our database with you and you can then choose your date ! 
 
-These are some of the screenshots of the app game ! 
+These are some of the screenshots of the app game, especially the dressing part ! 
 You can choose your skin color, your outfit and you are good to go for your date <3
 
 Enjoy !
