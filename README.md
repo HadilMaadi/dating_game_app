@@ -2,6 +2,8 @@
 This is a dating compatability game app where you'll date a classmate from our class ! 
 
 These are some of the screenshots of the app game ! 
+You can choose your skin color, your outfit and you are good to go for your date <3
+
 Enjoy !
 
 
